@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css" id="theme-source" media="all">
+    <link rel="icon" href="./assets/favicon.svg">
+    <script src="./script.js" defer></script>
+    <meta
+            name="description"           
+            content="Portfolio website.">
+    <title>Md. Ahsan Shams Siddiqui - Portfolio</title>
+</head>
+<body>
+    <div class="sidenav">
+        <button class="link" id="1">
+            <a href="#About">
+                <div class="dot"></div>
+                <small>
+                    About
+                </small>
+            </a>
+        </button>
+        <button class="link" id="3">
+            <a href="#Projects">
+                <div class="dot"></div>
+                <small>
+                    Projects
+                </small>
+            </a>
+        </button>
+        <button class="link" id="2">
+            <a href="#Skills">
+                <div class="dot"></div>
+                <small>
+                    Skills
+                </small>
+            </a>
+        </button>
+        <button class="link" id="4">
+            <a href="#Academics">
+                <div class="dot"></div>
+                <small>
+                    Academics
+                </small>
+            </a>
+        </button>
+    </div>
+    <div>
+        <ul class="side-social">
+            <li>
+                <a href="mailto:sahil.alam8886@gmail.com" target="_blank" rel="noopener" title="Mail me!">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                </a>  
+            </li>
+            <li>
+                <a href="https://github.com/ahsanshams" target="_blank" rel="noopener" title="Github">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>  
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/ahsanshams/" target="_blank" rel="noopener" title="Linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>  
+            </li>
+        </ul>
+    </div>
+    <main>
+        <nav>
+            <div class="nav-1">
+                <div class="title"><a href="#front">A</a></div>
+                <ul class="links">
+                    <li>|</li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Academics">Academics</a></li>
+                </ul>
+            </div>
+            <div class="links-menu">
+                <ul class="links-mobile" onclick="openMenu()">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Academics">Academics</a></li>
+                </ul>
+            </div>
+            <div class="theme-button">
+                <img src="./assets/day.svg" onclick="changeTheme()" class="button-hide" id="theme1">
+                <img src="./assets/night.svg" onclick="changeTheme()" id="theme2">
+                <div class="hamb">
+                    <input type="checkbox" id="menu-check" onclick="openMenu()"/>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="front" id="front">
+            <div>
+                <span id="front1">Hey there!</span>
+                <h1 id="front2">I'm Ahsan.</h1>
+                <span id="front3">Java developer. Problem solving enthusiast. Avid learner.</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="mailto:sahil.alam8886@gmail.com" target="_blank" rel="noopener" title="Mail me!">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
+                            </svg>
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="https://github.com/ahsanshams" target="_blank" rel="noopener" title="Github">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ahsanshams/" target="_blank" rel="noopener" title="Linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="8" y1="11" x2="8" y2="16" />
+                                <line x1="8" y1="8" x2="8" y2="8.01" />
+                                <line x1="12" y1="16" x2="12" y2="11" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                        </a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="About">
+            <div class="heading"><div class="colored">About</div> me</div>
+            <div class="content">
+                <b>Hi!</b>
+                <p>
+                     I'm a CS undergraduate from India who loves problem solving, creating new things, & exploring technologies. 
+                </p>
+                <p>
+                    I'm interested in the domain of Machine Learning, Data Science, and Java development.
+                </p>
+                <div>
+                    <a href="./assets/resume.pdf"><button>Resume</button></a>
+                    <a href="#Academics"><button>Academics  </button></a>
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="heading"><div class="colored">P</div>rojects</div>
+            <div class="content">
+                <div class="project-menu">
+                    <ul class="project-titles">
+                        <li class="active" id="1">Expense Tracker</li>
+                        <li id="2">Medical Data Extraction</li>
+                    </ul>
+                    <div class="project-card">
+                        <div class="project-content active">
+                            <div class="project-heading">Expense Tracker</div>
+                            <p>
+                                A web application to manage the daily expenses in much more efficient and manageable way.
+                            </p>
+                            <ul class="tech">
+                                <li>Python</li>
+                                <li>OOPS</li>
+                                <li>NumPy</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-heading">Medical Data Extraction</div>
+                            <p>Software to extract medical data out of complicated files using computer vision and processing.
+                            </p>
+                            <ul class="tech">
+                                <li>Python</li>
+                                <li>Computer Vision</li>
+                                <li>Optical Character Recognition</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                </a>  
+                                <a href="" target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                        <line x1="10" y1="14" x2="20" y2="4" />
+                                        <polyline points="15 4 20 4 20 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills">
+            <div class="heading"><div class="colored">S</div>kills</div>
+            <div class="content">
+                <ul class="content-box">
+                    <div class="skill-button">
+                        <svg fill="#666" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48" height="48">
+                            <path fill="#666" stroke="none" stroke-miterlimit="10" stroke-width="2" d="M25,13c3.78,0,7.275,1.755,9.542,4.741l-4.38,2.536C28.844,18.837,26.973,18,25,18c-3.86,0-7,3.14-7,7s3.14,7,7,7c1.973,0,3.844-0.837,5.162-2.277l4.38,2.536C32.275,35.245,28.78,37,25,37c-6.617,0-12-5.383-12-12S18.383,13,25,13"/>
+                            <path fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="2" d="M43.421 12.875L26.579 3.412c-.977-.549-2.181-.549-3.158 0L6.579 12.875C5.602 13.424 5 14.439 5 15.537v18.927c0 1.098.602 2.113 1.579 2.662l16.842 9.463c.977.549 2.181.549 3.158 0l16.842-9.463C44.398 36.576 45 35.561 45 34.463V15.537C45 14.439 44.398 13.424 43.421 12.875"/>
+                        </svg>
+                        <p>C</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-python" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                            <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                            <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                            <line x1="11" y1="6" x2="11" y2="6.01" />
+                            <line x1="13" y1="18" x2="13" y2="18.01" />
+                            </svg>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                            <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                        </svg>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                          </svg>
+                        <p>SQL</p>
+                    </div>
+                </ul>
+            </div></section>
+        <section id="Academics">
+            <div class="heading"><div class="colored">A</div>cademics</div>
+            <div class="content">
+                <b style="margin: 0.5rem 0; font-size: 1.5rem;">B.Tech (IT) </b>
+                <small style="font-size: 1rem;">Shrimati Kashibai Navale College of Engineering</small>
+                <small style="margin: 0.5rem 0;">2019-23</small>
+            </div>
+        </section>
+        <footer>
+            Made with <div id="heart"></dietch-a-sketchv>
+        </footer>
+    </main>
+</body>
+</html>
